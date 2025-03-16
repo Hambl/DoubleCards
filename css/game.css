@@ -1,0 +1,25 @@
+.game__title{
+    display: flex;
+}
+
+.game__button-show {
+    display: block;
+    height: 50px;
+    width: 250px;
+    border: none;
+    margin-bottom: 30px;
+    border-radius: 30px;
+    background-color: darkseagreen;
+    font-size: 20px;
+    transition-duration: 0.2s;
+}
+
+.game__button-show:active {
+    box-shadow: 0 0 15px rgb(185, 209, 185);
+    transform: scale(0.9);
+}
+
+.game__button-show_disable{
+    pointer-events: none;
+    background-color: transparent;
+}
