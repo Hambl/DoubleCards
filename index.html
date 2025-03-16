@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Цветные карточки</title>
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body class="page">
+    <header class="header">
+        <h1 class="header__title">Цветные карточки</h1>
+    </header>
+    <main class="content">
+        <section class="container">
+            <!-- This section is generated using JavaScript -->
+        </section>
+        <template id="settings">
+            <form action="" class="settings__form">
+                <fieldset class="settings__fieldset">
+                    <legend cl>Количество карточек</legend>
+                    <div class="settings__radio-wrapper">
+                        <input type="radio" name="cardsNum" value="8">
+                        <label class=".settings__fieldset-lable">8</label>
+                    </div>
+                    <div class="settings__radio-wrapper">
+                        <input type="radio" name="cardsNum" value="12">
+                        <label class=".settings__fieldset-lable">12</label>
+                    </div>
+                    <div class="settings__radio-wrapper">
+                        <input type="radio" name="cardsNum" value="16">
+                        <label class=".settings__fieldset-lable">16</label>
+                    </div>
+                </fieldset>
+                <fieldset class="settings__fieldset">
+                    <legend>Таймер в секундах</legend>
+                    <div class="settings__radio-wrapper">
+                        <input type="radio" name="timerCount" value="1">
+                        <label class=".settings__fieldset-lable">1</label>
+                    </div>
+                    <div class="settings__radio-wrapper">
+                        <input type="radio" name="timerCount" value="2">
+                        <label class=".settings__fieldset-lable">2</label>
+                    </div>
+                    <div class="settings__radio-wrapper">
+                        <input type="radio" name="timerCount" value="3">
+                        <label class=".settings__fieldset-lable">3</label>
+                    </div>
+                </fieldset>
+                <div class="settings__checkbox-wrapper">
+                    <input type="checkbox" id="colorHints">
+                    <label for="colorHints">Подсказки цветов</label>
+                </div>
+                <div class="settings__button-wrapper">
+                    <button type="button" class="settings__button" id="save">Сохранить</button>
+                    <button type="button" class="settings__button" id="default">Сбросить</button>
+                </div>
+            </form>
+        </template>
+    </main>
+    <script type="module" src="./main.js"></script>
+</body>
+</html>
